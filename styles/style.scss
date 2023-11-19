@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: rgb(4, 13, 18);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    
+    .card {
+        background-color:rgb(24, 61, 61);
+        width: 500px;
+        height: 400px;
+        color: rgb(240, 240, 240);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 1px 0px 2px rgb(0 0 0 / 10%);
+        gap: 5px;
+        border-radius: 18px;
+    }
+}
+
+.button {
+    position: relative;
+
+    button {
+        position: absolute;
+        left: 178px;
+        bottom: -160px;
+        margin-top: 10px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border: 0;
+        background-color: white;
+        margin-bottom: 10px;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    button:active {
+        background-color: rgb(208, 201, 192);
+    }
+
+    #imagem {
+        padding: 20px;
+        position: relative;
+        top: -8px;
+        left: -12px;
+    }
+}
+
+input {
+    border: 0;
+    border-radius: 20px;
+    width: 178px;
+    height: 35px;
+    text-align: center;
+    color: rgb(39, 40, 41);
+}
+
+input:focus {
+    outline: 0;
+    color: rgb(39, 40, 41);
+}
+
+p {
+    font-weight: 700;
+}
+
+#icon-footer {
+    color: rgb(208, 201, 192);
+}
+
+#nome {
+    text-align: center;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+@media screen and (max-width: 768px) {
+    main {
+        .card {
+          margin: 10px;
+          width: 330px;
+          height: 502px;
+        }    
+    }
+
+    .button {
+        button {
+            position: unset;
+        }
+    }
+
+    .pg {
+        margin-top: 0;
+    }
+}
+
+footer {
+    width: 100vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.git {
+    width: 34px;
+}
+
+#nome {
+    margin-bottom: 25px;
+    font-weight: 700;
+}

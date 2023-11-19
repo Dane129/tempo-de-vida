@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo de Vida</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <span id="nome">Saiba quanto tempo você viveu! <br>Insira seu nome e ano de nascimento<br> para descobrir o
+                tempo total de sua vida</span>
+            <label class="sr-only" for="nomeUsuario">NOME DE USUÁRIO</label>
+            <input type="text" name="" maxlength="15" placeholder="NOME" id="nomeUsuario">
+            <label class="sr-only" for="anoNascimento">ANO DE NASCIMENTO</label>
+            <input type="text" name="" placeholder="ANO" id="anoNascimento">
+
+            <div class="button">
+                <button onclick="calcularIdade()"><span id="imagem" class="material-symbols-outlined">
+                        done
+                    </span></button>
+            </div>
+            <p class="pg">Idade: <span id="idade"></span></p>
+            <p>Meses: <span id="meses"></span></p>
+            <p>Dias: <span id="dias"></span></p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://github.com/Dane129" target="_blank"><span id="icon-footer" class="material-symbols-outlined">
+                taunt
+            </span></a>
+    </footer>
+</body>
+
+</html>
